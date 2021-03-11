@@ -9,35 +9,32 @@ import {
 import Home from './Components/Home';
 import Header from './Components/Header/Header';
 import TeamDetails from './Components/TeamDetails/TeamDetails';
+import NoMatch from './Components/NoMatch/NoMatch';
+
 
 function App() {
   return (
     <Router>
-      
+
       <Switch>
-        
+
         <Route exact path='/' >
-        <Header></Header>
+          <Header></Header>
           <Home></Home>
-          
+
         </Route>
         <Route path="/home">
-        <Header></Header>
+          <Header></Header>
           <Home></Home>
-          
+
         </Route>
         <Route path="/team/:teamId">
           <TeamDetails></TeamDetails>
         </Route>
         <Route path='*'>
-          <h1>No found</h1>
+          <NoMatch></NoMatch>
 
         </Route>
-
-
-        {/* <Route path='/country/:countryName'>
-          <CountryDetails></CountryDetails>
-        </Route> */}
       </Switch>
     </Router>
 
