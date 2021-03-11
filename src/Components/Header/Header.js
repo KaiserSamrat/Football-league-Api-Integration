@@ -25,7 +25,7 @@ const Header = () => {
         <div >
         <img src={banner} alt="" style={{height:"500px", width:"100%"}}/>
         <div className="centered">
-            <h1>Fantasy League</h1>
+            <h1>Fantasy Football League</h1>
         </div>
         
 
