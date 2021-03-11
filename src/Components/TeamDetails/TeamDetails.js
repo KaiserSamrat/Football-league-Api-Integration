@@ -21,20 +21,6 @@ const TeamDetails = () => {
 
     const Gender = teamInfo.strGender;
 
-
-    let showImage;
-
-
-    if (Gender === "Male") {
-        showImage = <img className="img-fluid" src={maleImage} alt="" />
-
-    }
-    else {
-        showImage = <img className="img-fluid" src={femaleImage} alt="" />
-    }
-
-
-
     return (
 
         <div>
@@ -56,7 +42,11 @@ const TeamDetails = () => {
 
                     </div>
                     <div className="col-md-5 p-4 image-area " >
-                        {showImage}
+                        {
+                            (Gender==="Male") ? <img className="img-fluid" src={maleImage} alt="" /> : 
+                            <img className="img-fluid" src={femaleImage} alt="" />
+
+                        }
 
                     </div>
                 </div>
