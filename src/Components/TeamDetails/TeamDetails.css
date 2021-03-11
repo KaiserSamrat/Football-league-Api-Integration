@@ -1,0 +1,26 @@
+body{
+    background-color: #26014cf0;
+}
+.team-details{
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    background-color: #042ca2;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.image-area{
+    margin-top: 10px;
+    height: 100%;
+}
+.centered {
+    color: navajowhite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+  }
+  .footer a{
+      padding: 10px;
+  }
