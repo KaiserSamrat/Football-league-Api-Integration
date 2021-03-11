@@ -27,7 +27,7 @@ const TeamDetails = () => {
         <>
             <section>
                 {/* <img src={banner} alt="" style={{ height: "500px", width: "100%" }} /> */}
-                <img className="team-banner" src={teamInfo.strTeamBanner} alt="" style={{ height: "500px", width: "100%" }} />
+                <img src={teamInfo.strTeamBanner} alt="" style={{ height: "500px", width: "100%" }} />
 
                 <img className="centered" src={teamInfo.strTeamBadge} alt="" />
             </section>
