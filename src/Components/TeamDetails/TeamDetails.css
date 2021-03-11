@@ -9,10 +9,7 @@ body{
     border-radius: 10px;
     margin: 10px auto;
 }
-.image-area{
-    margin-top: 10px;
-    height: 100%;
-}
+
 .centered {
     color: navajowhite;
     position: absolute;

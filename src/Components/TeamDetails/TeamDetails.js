@@ -19,11 +19,12 @@ const TeamDetails = () => {
             .then(data => setTeamInfo(data.teams[0]))
     }, [teamId])
 
-    const Gender = teamInfo.strGender;
+    // const Gender = teamInfo.strGender;
+    // console.log(typeof(Gender));
 
     return (
 
-        <div>
+        <>
             <section>
                 {/* <img src={banner} alt="" style={{ height: "500px", width: "100%" }} /> */}
                 <img src={teamInfo.strTeamBanner} alt="" style={{ height: "500px", width: "100%" }} />
@@ -41,10 +42,11 @@ const TeamDetails = () => {
                         <p>  <img src={genderLogo} alt="" style={{ height: "20px" }} /> Gender: {teamInfo.strGender}</p>
 
                     </div>
-                    <div className="col-md-5 p-4 image-area " >
+                    <div className="col-md-5 p-4 " >
                         {
-                            (Gender==="Male") ? <img className="img-fluid" src={maleImage} alt="" /> : 
-                            <img className="img-fluid" src={femaleImage} alt="" />
+                            ( teamInfo.strGender==="Male") 
+                            ? <img className="img-fluid" src={maleImage} alt="" /> 
+                            : <img className="img-fluid" src={femaleImage}  alt="" />
 
                         }
 
@@ -61,7 +63,7 @@ const TeamDetails = () => {
                 <a target="_blank" href={`https://${teamInfo.strYoutube}`} rel="noreferrer"><FontAwesomeIcon icon={faYoutube} className="fa-3x" /></a>
             </div>
 
-        </div>
+        </>
 
         // </div>
 
