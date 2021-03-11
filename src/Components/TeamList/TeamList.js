@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './TeamList.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import TeamDetails from '../TeamDetails/TeamDetails';
+
 const TeamList = (props) => {
     const{strTeam,strTeamBadge,strLeague,idTeam,strSport} = props.team;
     return (

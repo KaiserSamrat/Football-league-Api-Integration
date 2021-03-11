@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import './TeamDetails.css'
 import maleImage from '../../Photo/male.png'
 import femaleImage from '../../Photo/female.png'
-import banner from '../../Photo/banner.jpg'
+
 import flagLogo from '../../Icon/flagLogo.png'
 import genderLogo from '../../Icon/gender.png'
 import foundedLogo from '../../Icon/founded.png'
